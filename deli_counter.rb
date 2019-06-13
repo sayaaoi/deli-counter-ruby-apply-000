@@ -9,6 +9,7 @@ def line(katz_deli)
     katz_deli.each do |name|
       id = katz_deli.find_index(name) + 1 
       puts "#{id}. #{name}"
+    end
   end
 end
 
