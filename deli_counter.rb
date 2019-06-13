@@ -12,13 +12,16 @@ def line(katz_deli)
   end
 end
 
-line_number = 0
-def take_a_number(katz_deli, id_number)
-  line_number += 1 
-  katz_deli.push(id_number)
-  num = katz_deli.find_index(name) + 1
-  puts "Welcome, Your are number number #{num} in line."
+$line_number = 0
+def take_a_number(katz_deli)
+  $line_number += 1 
+  katz_deli.push($line_number)
+  puts "Welcome, Your id number is #{$line_number}"
 end
+
+take_a_number(katz_deli)
+take_a_number(katz_deli)
+take_a_number(katz_deli)
 
 def now_serving(katz_deli)
   if katz_deli == []
