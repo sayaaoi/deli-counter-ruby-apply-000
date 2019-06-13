@@ -12,10 +12,12 @@ def line(katz_deli)
   end
 end
 
-def take_a_number(katz_deli, name)
-  katz_deli.push(name)
+line_number = 0
+def take_a_number(katz_deli, id_number)
+  line_number += 1 
+  katz_deli.push(id_number)
   num = katz_deli.find_index(name) + 1
-  puts "Welcome, #{name}. Your are number number #{num} in line."
+  puts "Welcome, Your are number number #{num} in line."
 end
 
 def now_serving(katz_deli)
