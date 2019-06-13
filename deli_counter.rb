@@ -20,13 +20,7 @@ def take_a_number(katz_deli)
   puts "Welcome, Your id number is #{$line_number}"
 end
 
-take_a_number(katz_deli)
-take_a_number(katz_deli)
-take_a_number(katz_deli)
-now_serving(katz_deli)
-now_serving(katz_deli)
-now_serving(katz_deli)
-take_a_number(katz_deli)
+
 
 def now_serving(katz_deli)
   if katz_deli == []
@@ -37,3 +31,11 @@ def now_serving(katz_deli)
     katz_deli.shift()
   end
 end
+
+take_a_number(katz_deli)
+take_a_number(katz_deli)
+take_a_number(katz_deli)
+now_serving(katz_deli)
+now_serving(katz_deli)
+now_serving(katz_deli)
+take_a_number(katz_deli)
